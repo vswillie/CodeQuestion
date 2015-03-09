@@ -14,6 +14,10 @@
 		36766E971AAD397000FADDDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36766E961AAD397000FADDDE /* Images.xcassets */; };
 		36766E9A1AAD397000FADDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36766E981AAD397000FADDDE /* LaunchScreen.xib */; };
 		36766EA61AAD397000FADDDE /* CodeQuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36766EA51AAD397000FADDDE /* CodeQuestionTests.m */; };
+		36766EB11AAD499300FADDDE /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 36766EB01AAD499300FADDDE /* Movie.m */; };
+		36766EB41AAD4E8000FADDDE /* MovieList.m in Sources */ = {isa = PBXBuildFile; fileRef = 36766EB31AAD4E8000FADDDE /* MovieList.m */; };
+		36766EB71AAD513F00FADDDE /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36766EB61AAD513F00FADDDE /* MovieCell.m */; };
+		FCEE337D1A8B5605BC3C5B4C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 905C50F2F6177FE5324A575B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		36766E9F1AAD397000FADDDE /* CodeQuestionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeQuestionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36766EA41AAD397000FADDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36766EA51AAD397000FADDDE /* CodeQuestionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeQuestionTests.m; sourceTree = "<group>"; };
+		36766EAF1AAD499300FADDDE /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		36766EB01AAD499300FADDDE /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		36766EB21AAD4E8000FADDDE /* MovieList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieList.h; sourceTree = "<group>"; };
+		36766EB31AAD4E8000FADDDE /* MovieList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieList.m; sourceTree = "<group>"; };
+		36766EB51AAD513F00FADDDE /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		36766EB61AAD513F00FADDDE /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		576A5494A13DF60692857089 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		86031F8DB5D9ADC3DAAA66A4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		905C50F2F6177FE5324A575B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEE337D1A8B5605BC3C5B4C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F58036578DED149D6CC4658 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				576A5494A13DF60692857089 /* Pods.debug.xcconfig */,
+				86031F8DB5D9ADC3DAAA66A4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		36766E7D1AAD397000FADDDE = {
 			isa = PBXGroup;
 			children = (
 				36766E881AAD397000FADDDE /* CodeQuestion */,
 				36766EA21AAD397000FADDDE /* CodeQuestionTests */,
 				36766E871AAD397000FADDDE /* Products */,
+				1F58036578DED149D6CC4658 /* Pods */,
+				909D00E37A6E30956B733F9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +110,12 @@
 				36766E8E1AAD397000FADDDE /* AppDelegate.m */,
 				36766E901AAD397000FADDDE /* ViewController.h */,
 				36766E911AAD397000FADDDE /* ViewController.m */,
+				36766EB51AAD513F00FADDDE /* MovieCell.h */,
+				36766EB61AAD513F00FADDDE /* MovieCell.m */,
+				36766EAF1AAD499300FADDDE /* Movie.h */,
+				36766EB01AAD499300FADDDE /* Movie.m */,
+				36766EB21AAD4E8000FADDDE /* MovieList.h */,
+				36766EB31AAD4E8000FADDDE /* MovieList.m */,
 				36766E931AAD397000FADDDE /* Main.storyboard */,
 				36766E961AAD397000FADDDE /* Images.xcassets */,
 				36766E981AAD397000FADDDE /* LaunchScreen.xib */,
@@ -119,6 +150,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		909D00E37A6E30956B733F9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				905C50F2F6177FE5324A575B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36766EA91AAD397000FADDDE /* Build configuration list for PBXNativeTarget "CodeQuestion" */;
 			buildPhases = (
+				CF83E3697D8EEFF4E0C7F331 /* Check Pods Manifest.lock */,
 				36766E821AAD397000FADDDE /* Sources */,
 				36766E831AAD397000FADDDE /* Frameworks */,
 				36766E841AAD397000FADDDE /* Resources */,
+				48B174478E0CF169467AA5BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +255,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48B174478E0CF169467AA5BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF83E3697D8EEFF4E0C7F331 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36766E821AAD397000FADDDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				36766E921AAD397000FADDDE /* ViewController.m in Sources */,
+				36766EB41AAD4E8000FADDDE /* MovieList.m in Sources */,
+				36766EB71AAD513F00FADDDE /* MovieCell.m in Sources */,
 				36766E8F1AAD397000FADDDE /* AppDelegate.m in Sources */,
+				36766EB11AAD499300FADDDE /* Movie.m in Sources */,
 				36766E8C1AAD397000FADDDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +418,7 @@
 		};
 		36766EAA1AAD397000FADDDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576A5494A13DF60692857089 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeQuestion/Info.plist;
@@ -351,6 +429,7 @@
 		};
 		36766EAB1AAD397000FADDDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86031F8DB5D9ADC3DAAA66A4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeQuestion/Info.plist;
@@ -412,6 +491,7 @@
 				36766EAB1AAD397000FADDDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36766EAC1AAD397000FADDDE /* Build configuration list for PBXNativeTarget "CodeQuestionTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +500,7 @@
 				36766EAE1AAD397000FADDDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
