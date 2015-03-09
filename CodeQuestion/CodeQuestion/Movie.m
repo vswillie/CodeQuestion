@@ -17,8 +17,9 @@
         _title = [result valueForKey:@"title"];
         _year = [NSString stringWithFormat:@"%d", [[result valueForKey:@"year"] intValue] ];
         _rating = [result valueForKey:@"rating"];
-        if ([[[result valueForKey:@"poster"] valueForKey:@"urls"] valueForKey:@"w154"]) {
-            _posterUrl = [NSURL URLWithString:[[[result valueForKey:@"poster"] valueForKey:@"urls"] valueForKey:@"w154"]];
+        if ([result valueForKeyPath:@"poster.urls.w154"]) {
+            _posterUrl = [NSURL URLWithString:[result valueForKeyPath:@"poster.urls.w154"]];
+
         }
     }
     return self;
